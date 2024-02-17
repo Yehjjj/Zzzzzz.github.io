@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anon</title>
+    <link rel="stylesheet" href="stylep.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+      <link rel="stylesheet" href="./assets/css/style-prefixl.css">
+        <script>
+   function updateTotalPrice() {
+      var unitPrice = 55.99; // Replace with your actual unit price
+      var quantitySelect = document.getElementById("quantitySelect");
+      var quantity = parseInt(quantitySelect.value);
+      var totalPrice = unitPrice * quantity;
+
+      // Display the updated total price
+      document.getElementById("totalPrice").textContent = "Total price: $" + totalPrice.toFixed(2);
+   }
+</script>
+<!-- Add this script after your existing script -->
+<script>
+  function redirectToCryptoPage() {
+    // Get the total price
+    var totalPrice = document.getElementById("totalPrice").textContent;
+
+    // Encode the total price as a parameter in the URL
+    var encodedTotalPrice = encodeURIComponent(totalPrice);
+
+    // Redirect to the crypto page with the total price parameter
+    window.location.href = "crypto.html?totalPrice=" + encodedTotalPrice;
+  }
+</script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="./assets/images/logo/logo.svg" alt="Anon's" width="125px"
+          /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hot.html">Hot offers</a></li>
+            <li><a href="best.html">Best sellers</a></li>
+            <li><a href="about.html">About us</a></li>
+              <!-- TODo: 22:20 -->
+            </ul>
+          </nav>
+
+
+        <img
+          src="images/menu.png"
+          alt=""
+          class="menu-icon"
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+
+    <!-- Single Products Detail -->
+    <div class="small-container single-product">
+      <div class="row">
+        <div class="col-2">
+          <img src="images/8.jpg" width="100%" id="ProductImg" />
+
+          <div class="small-img-row">
+            <div class="small-img-col">
+              <img src="images/8.jpg" class="small-img" />
+            </div>
+
+            <div class="small-img-col">
+              <img src="images/81.jpg" class="small-img" />
+            </div>
+            <div class="small-img-col">
+              <img src="images/82.jpg" class="small-img" />
+            </div>
+            <div class="small-img-col">
+              <img src="images/83.jpg" class="small-img" />
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          
+          <h2>Apple iPhone 8</h2>
+                    <div>
+                    <h3>Unit price : 55.99$</h3>
+                     <del>116.57$</del>
+                      </div>
+                       <h5 style="color: ;" >Eligible for Return, Refund or Replacement within 90 days of receipt</h5>
+          <div style="display: flex;">
+
+         
+
+           
+                    <select name="" id="">
+            <option value="">Select color</option>
+            <option value="">Black</option>
+            <option value="">White</option>
+
+            
+          </select>
+           &nbsp;
+<select name="" id="quantitySelect" onchange="updateTotalPrice()">
+  
+            <option value="0">Quantity</option>
+            <option value="1">001</option>
+            <option value="2">002</option>
+            <option value="3">003</option>
+            <option value="4">004</option>
+            <option value="5">005</option>
+            <option value="6">006</option>
+            <option value="7">007</option>
+            <option value="8">008</option>
+            <option value="9">009</option>
+            <option value="10">010</option>
+            <option value="11">011</option>
+            <option value="12">012</option>
+            
+
+            
+          </select>
+          </div>
+            &nbsp;
+<h2 style="color: green;" id="totalPrice">Total price: 0$</h2>
+<a href="javascript:void(0);" class="btn" onclick="redirectToCryptoPage()">Shop now</a>
+
+          <h3>Product Details<i class="fa fa-indent"></i></h3>
+          <br />
+          <p>
+Apple iPhone 8, 64 GB, Fully Unlocked,
+          </p>
+        </div>
+      </div>
+    </div>
+        
+
+    <iframe style="margin-left: 10%; margin-right: 10%;" width="80%" height="360" src="https://www.youtube.com/embed/j0py91Y0bLo?si=P77_CnvxkvkC7MTW" frameborder="0" allowfullscreen></iframe>
+               &nbsp;
+    <div style="margin-left: 5%; margin-right: 5%;" >
+    <h3>Features & details</h3>
+    <p>widescreen LCD multi-touch display with IPS technology and Retina HD display
+12MP wide-angle and telephoto cameras, Optical image stabilization and Six‑element lens
+All new glass design with A color‑matched, aerospace‑grade aluminum band
+Splash, water, and dust resistant
+4K video recording at 24 fps, 30 fps, or 60 fps</p>
+</div>
+
+    <!-- Title -->
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+      </div>
+    </div>
+
+    <!-- Similar Products -->
+
+    <div class="small-container">
+      <div class="row">
+        <div class="col-4">
+          <a href="Apple iPhone 11.html">
+          <img src="images/1.jpg" alt="" /></a>
+          <h4>Apple iPhone 11</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$110.50</p>
+        </div>
+
+
+          <h4>Apple iPhone 13 Pro Max</h4>
+                    <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$402.42</p>
+        </div>
+
+        <div class="col-4">
+          <a href="Apple iPhone 13.html">
+          <img src="images/ip.jpg" alt="" /></a>
+          <h4>Apple iPhone 13</h4>
+                    <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$390.99</p>
+        </div>
+        <div class="col-4">
+          <a href="Apple iPhone 14 Pro Max.html">
+          <img src="images/14.jpg" alt="" /></a>
+          <h4>Apple iPhone 14 Pro Max</h4>
+                    <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$559.00</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+  
+          </div>
+          <div class="footer-col-2">
+            <img src="./assets/images/logo/logo.svg" alt="" />
+            <p>
+We want to take a moment to express our heartfelt gratitude for your unwavering support over the years. Your loyalty has been the cornerstone of our success, and we are truly thankful for each and every one of you.As we embark on a new chapter, we want to extend our sincerest thanks for being a part of our journey. Your trust and patronage have meant the world to us
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Go to</h3>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hot.html">Hot offers</a></li>
+            <li><a href="best.html">Best sellers</a></li>
+            <li><a href="about">About us</a></li>
+            </ul>
+          </div>
+
+
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2019-2024, Anon, Inc </p>
+      </div>
+    </div>
+
+    <!-- JS for Toggle menu -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <!-- js for product gallery -->
+    <script>
+      var ProductImg = document.getElementById("ProductImg");
+      var smallImg = document.getElementsByClassName("small-img");
+      smallImg[0].onclick = function () {
+        ProductImg.src = smallImg[0].src;
+      };
+      smallImg[1].onclick = function () {
+        ProductImg.src = smallImg[1].src;
+      };
+      smallImg[2].onclick = function () {
+        ProductImg.src = smallImg[2].src;
+      };
+      smallImg[3].onclick = function () {
+        ProductImg.src = smallImg[3].src;
+      };
+    </script>
+  </body>
+</html>
